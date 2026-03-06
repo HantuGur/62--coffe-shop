@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="+62 Coffee & Space — Specialty coffee shop di Jakarta Barat. Come for the coffee, stay for the vibes. Rating 4.9/5 dari ribuan pelanggan setia." />
+  <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://62coffee.id/" />
+  <meta property="og:title"       content="+62 Coffee & Space — Specialty Coffee Jakarta Barat" />
+  <meta property="og:description" content="Come for the coffee, stay for the vibes. Specialty coffee shop di Tanjung Duren, Jakarta Barat. Rating 4.9/5." />
+  <meta property="og:image"       content="https://62coffee.id/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="+62 Coffee & Space" />
+  <meta name="twitter:description" content="Come for the coffee, stay for the vibes." />
+  <meta name="twitter:image"       content="https://62coffee.id/assets/og-image.jpg" />
+
+  <title>+62 Coffee & Space — Specialty Coffee Jakarta Barat</title>
+
+  <!-- Preconnect for Google Fonts performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Stars (canvas-based, populated by JS) -->
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a href="#hero" class="nav__logo" aria-label="+62 Coffee & Space — kembali ke atas">
+        +<span>62</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" role="list">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#location" class="nav__cta">Kunjungi</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile only) -->
+      <button
+        class="nav__hamburger"
+        id="nav-hamburger"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menu navigasi mobile">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="#about" class="nav__mobile-link">Tentang</a></li>
+        <li><a href="#menu" class="nav__mobile-link">Menu</a></li>
+        <li><a href="#why" class="nav__mobile-link">Why Us</a></li>
+        <li><a href="#location" class="nav__mobile-link nav__mobile-cta">Kunjungi</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__ring hero__ring--sm" aria-hidden="true"></div>
+      <div class="hero__ring hero__ring--lg" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__badge" aria-label="Coffee and Space, Jakarta Barat">
+          ☕ Coffee &amp; Space · Jakarta Barat
+        </p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="text--gold">+</span>62
+        </h1>
+        <p class="hero__sub">Come for the coffee. Stay for the vibes.</p>
+        <div class="hero__btns">
+          <a href="#menu" class="btn btn--gold">Lihat Menu</a>
+          <a href="#location" class="btn btn--outline">Temukan Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="section section--alt" aria-labelledby="about-title">
+      <div class="container about-grid">
+
+        <div class="about__text reveal">
+          <p class="section-label" aria-hidden="true">Tentang Kami</p>
+          <h2 id="about-title">Lebih dari<br><em>Sekadar Kopi</em></h2>
+          <p>+62 Coffee &amp; Space hadir sebagai ruang ketiga — antara rumah dan kantor — di mana setiap cangkir bercerita tentang cita rasa Indonesia yang sesungguhnya.</p>
+          <p>Minimal look, maksimal rasa. Kami percaya kopi terbaik lahir dari biji pilihan, diseduh penuh perhatian, dan dinikmati dalam suasana yang tepat.</p>
+
+          <dl class="stats" aria-label="Statistik +62 Coffee">
+            <div class="stat">
+              <dt class="stat__label">Rating Pelanggan</dt>
+              <dd class="stat__number">4.9</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__label">Varian Menu</dt>
+              <dd class="stat__number">50+</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__label">Pelanggan Setia</dt>
+              <dd class="stat__number">10K+</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat__label">Berdiri Sejak</dt>
+              <dd class="stat__number">2023</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="about__visual reveal reveal--delay-1" aria-hidden="true">
+          <div class="about__box">
+            +62
+            <div class="about__tag">
+              <strong>4.9★</strong>
+              Rating Terbaik
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MENU
+    ============================================================ -->
+    <section id="menu" class="section" aria-labelledby="menu-title">
+      <div class="container">
+
+        <div class="menu__header">
+          <div class="reveal">
+            <p class="section-label" aria-hidden="true">Signature Menu</p>
+            <h2 id="menu-title">Menu <em>Pilihan</em></h2>
+          </div>
+
+          <div class="menu__tabs reveal reveal--delay-1" role="group" aria-label="Filter kategori menu">
+            <button class="tab tab--active" data-filter="all"    aria-pressed="true">Semua</button>
+            <button class="tab"             data-filter="coffee"  aria-pressed="false">Kopi</button>
+            <button class="tab"             data-filter="non"     aria-pressed="false">Non-Kopi</button>
+            <button class="tab"             data-filter="food"    aria-pressed="false">Makanan</button>
+          </div>
+        </div>
+
+        <ul class="menu-grid" id="menu-grid" aria-label="Daftar menu +62 Coffee" role="list">
+
+          <li class="menu-card" data-category="coffee" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">☕</span>
+            <h3 class="menu-card__name">Signature Americano</h3>
+            <p class="menu-card__desc">Espresso bold karakter khas +62, fresh &amp; clean.</p>
+            <p class="menu-card__price">Rp 22.000 <small>/ cup</small></p>
+          </li>
+
+          <li class="menu-card" data-category="coffee" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🧊</span>
+            <h3 class="menu-card__name">Iced Magic Latte</h3>
+            <p class="menu-card__desc">Espresso creamy susu segar pilihan. Smooth &amp; menyegarkan.</p>
+            <p class="menu-card__price">Rp 28.000 <small>/ cup</small></p>
+          </li>
+
+          <li class="menu-card" data-category="coffee" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">💛</span>
+            <h3 class="menu-card__name">Gold Cappuccino</h3>
+            <p class="menu-card__desc">Cappuccino premium dengan latte art signature khas +62.</p>
+            <p class="menu-card__price">Rp 30.000 <small>/ cup</small></p>
+          </li>
+
+          <li class="menu-card" data-category="non" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🍵</span>
+            <h3 class="menu-card__name">Matcha Space Latte</h3>
+            <p class="menu-card__desc">Matcha premium Jepang + susu oat creamy. Non-kopi tapi tetap kece.</p>
+            <p class="menu-card__price">Rp 32.000 <small>/ cup</small></p>
+          </li>
+
+          <li class="menu-card" data-category="non" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🫐</span>
+            <h3 class="menu-card__name">Berry Galaxy Soda</h3>
+            <p class="menu-card__desc">Mixed berry dengan soda premium. Segar &amp; instagrammable.</p>
+            <p class="menu-card__price">Rp 25.000 <small>/ cup</small></p>
+          </li>
+
+          <li class="menu-card" data-category="food" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🍳</span>
+            <h3 class="menu-card__name">Nasi Telur Kari +62</h3>
+            <p class="menu-card__desc">Comfort food khas Nusantara dengan bumbu kari autentik.</p>
+            <p class="menu-card__price">Rp 38.000 <small>/ porsi</small></p>
+          </li>
+
+          <li class="menu-card" data-category="food" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🥐</span>
+            <h3 class="menu-card__name">Croissant Butter Madu</h3>
+            <p class="menu-card__desc">Lembut berlapis butter premium + drizzle madu. Pasangan sempurna kopi pagi.</p>
+            <p class="menu-card__price">Rp 22.000 <small>/ pcs</small></p>
+          </li>
+
+          <li class="menu-card" data-category="coffee" role="listitem">
+            <span class="menu-card__icon" aria-hidden="true">🌙</span>
+            <h3 class="menu-card__name">Dark Matter Espresso</h3>
+            <p class="menu-card__desc">Double shot dark roast. Untuk jiwa-jiwa pemberani.</p>
+            <p class="menu-card__price">Rp 20.000 <small>/ cup</small></p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY US
+    ============================================================ -->
+    <section id="why" class="section section--alt" aria-labelledby="why-title">
+      <div class="container">
+        <p class="section-label reveal" aria-hidden="true">Kenapa +62</p>
+        <h2 id="why-title" class="reveal reveal--delay-1 why__heading">Kenapa Memilih <em>Kami?</em></h2>
+
+        <!-- Marquee -->
+        <div class="marquee-wrap" aria-hidden="true">
+          <div class="marquee">
+            <span class="marquee__item"><span class="marquee__dot"></span>SPECIALTY COFFEE</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>MINIMAL LOOK MAKSIMAL RASA</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>CONNECT COMMUNITY</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>JAKARTA BARAT</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>SINCE 2023</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>RATING 4.9/5</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee__item"><span class="marquee__dot"></span>SPECIALTY COFFEE</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>MINIMAL LOOK MAKSIMAL RASA</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>CONNECT COMMUNITY</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>JAKARTA BARAT</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>SINCE 2023</span>
+            <span class="marquee__item"><span class="marquee__dot"></span>RATING 4.9/5</span>
+          </div>
+        </div>
+
+        <div class="why-grid" aria-label="Alasan memilih +62 Coffee">
+          <article class="why-card reveal">
+            <p class="why-card__number" aria-hidden="true">01</p>
+            <h3 class="why-card__title">Biji Kopi Pilihan</h3>
+            <p class="why-card__desc">Single origin terbaik dari Nusantara — Aceh, Toraja, Flores — diproses dengan standar specialty.</p>
+          </article>
+          <article class="why-card reveal reveal--delay-1">
+            <p class="why-card__number" aria-hidden="true">02</p>
+            <h3 class="why-card__title">Ruang yang Nyaman</h3>
+            <p class="why-card__desc">Desain minimal berkarakter. Cocok untuk bekerja, berdiskusi, atau menikmati waktu sendiri.</p>
+          </article>
+          <article class="why-card reveal reveal--delay-2">
+            <p class="why-card__number" aria-hidden="true">03</p>
+            <h3 class="why-card__title">Komunitas Lokal</h3>
+            <p class="why-card__desc">+62 adalah kebanggaan Indonesia. Kami hadir membangun komunitas yang saling menginspirasi.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         RATING STRIP
+    ============================================================ -->
+    <section class="rating-strip" aria-label="Rating pelanggan +62 Coffee">
+      <div class="rating-strip__inner">
+        <div class="rating-strip__score">
+          <p class="rating-strip__stars" aria-label="5 bintang">★★★★★</p>
+          <div class="rating-strip__number" aria-label="Rating 4.9 dari 5">
+            <span class="rating-strip__big">4.9</span>
+            <span class="rating-strip__denom">/5</span>
+          </div>
+          <p class="rating-strip__sub">Dari ribuan ulasan pelanggan setia</p>
+        </div>
+        <div class="rating-strip__cta">
+          <h2 class="rating-strip__headline">Sudah jutaan orang memilih +62 Coffee</h2>
+          <a href="#location" class="btn btn--dark">Kunjungi Sekarang →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LOCATION
+    ============================================================ -->
+    <section id="location" class="section section--alt" aria-labelledby="location-title">
+      <div class="container loc-grid">
+
+        <div class="loc__info reveal">
+          <p class="section-label" aria-hidden="true">Temukan Kami</p>
+          <h2 id="location-title">Lokasi &amp;<br><em>Jam Buka</em></h2>
+
+          <address class="info-list" aria-label="Informasi kontak +62 Coffee">
+
+            <div class="info-row">
+              <div class="info-row__icon" aria-hidden="true">📍</div>
+              <div class="info-row__body">
+                <strong>Alamat</strong>
+                <p>Jl. Tanjung Duren Raya No.10, Tj. Duren Utara,<br />Kec. Grogol Petamburan, Jakarta Barat 11470</p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-row__icon" aria-hidden="true">📞</div>
+              <div class="info-row__body">
+                <strong>Telepon / WhatsApp</strong>
+                <p><a href="tel:+6287700026262">+62 877-0002-6262</a></p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-row__icon" aria-hidden="true">📱</div>
+              <div class="info-row__body">
+                <strong>Instagram</strong>
+                <p>
+                  <a
+                    href="https://instagram.com/plusenamdua.idn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram @plusenamdua.idn (buka di tab baru)"
+                  >@plusenamdua.idn</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-row__icon" aria-hidden="true">🕐</div>
+              <div class="info-row__body">
+                <strong>Jam Buka</strong>
+                <dl class="hours" aria-label="Jam operasional">
+                  <dt class="hours__day">Senin – Jumat</dt>
+                  <div class="hours__sep" aria-hidden="true"></div>
+                  <dd class="hours__time">07.00 – 22.00</dd>
+                  <dt class="hours__day">Sabtu – Minggu</dt>
+                  <div class="hours__sep" aria-hidden="true"></div>
+                  <dd class="hours__time">08.00 – 23.00</dd>
+                </dl>
+              </div>
+            </div>
+
+          </address>
+        </div>
+
+        <div class="map-box reveal reveal--delay-1">
+          <p class="map-box__header">📍 +62 Coffee &amp; Space — Tanjung Duren</p>
+          <iframe
+            class="map-box__iframe"
+            title="Lokasi +62 Coffee &amp; Space di Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.83!2d106.7781!3d-6.1740!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTAnMjYuNCJTIDEwNsKwNDYnNDEuMiJF!5e0!3m2!1sid!2sid!4v1700000000"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-box__footer">
+            <span>Jakarta Barat, 11470</span>
+            <a
+              href="https://maps.google.com/?q=Jl.+Tanjung+Duren+Raya+No.10+Jakarta+Barat"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buka lokasi di Google Maps (tab baru)"
+            >Buka di Maps →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <p class="footer__logo" aria-label="+62 Coffee &amp; Space">+<span>62</span></p>
+          <p class="footer__tagline">Coffee &amp; Space · Jakarta Barat</p>
+          <p class="footer__desc">Minimal look, maksimal rasa. Ruang ketiga terbaik untuk produktivitas dan relaksasi di Jakarta Barat.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navigasi menu">
+          <h3 class="footer__col-title">Menu</h3>
+          <ul role="list">
+            <li><a href="#menu">Signature Coffee</a></li>
+            <li><a href="#menu">Non-Coffee</a></li>
+            <li><a href="#menu">Makanan</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Navigasi informasi">
+          <h3 class="footer__col-title">Info</h3>
+          <ul role="list">
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#why">Kenapa Kami</a></li>
+            <li><a href="#location">Lokasi</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Navigasi pemesanan">
+          <h3 class="footer__col-title">Order</h3>
+          <ul role="list">
+            <li><a href="#" aria-label="Pesan via GoFood">GoFood</a></li>
+            <li><a href="#" aria-label="Pesan via GrabFood">GrabFood</a></li>
+            <li><a href="#" aria-label="Pesan via ShopeeFood">ShopeeFood</a></li>
+            <li><a href="tel:+6287700026262" aria-label="Telepon langsung +62 877-0002-6262">Telepon</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 <span>+62 Coffee &amp; Space</span>. All rights reserved.</p>
+        <em>"Come for the coffee. Stay for the vibes."</em>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
